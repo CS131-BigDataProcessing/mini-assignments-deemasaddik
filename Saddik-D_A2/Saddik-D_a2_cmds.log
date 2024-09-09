@@ -1,0 +1,16 @@
+ 1026   grep --colour=always "wor" goodluck.txt
+ 1027   grep --colour=always "dred" goodluck.txt
+ 1028   grep --colour=always "Good luck, babe" goodluck.txt
+ 1029  wc "Good luck, babe" goodluck.txt
+ 1030  wc -l "Good luck, babe" goodluck.txt
+ 1031  $ grep 'Good luck, babe' goodluck.txt | wc -l -w
+ 1032  grep 'Good luck, babe' goodluck.txt | wc -l -w
+ 1033  grep 'Good luck, babe' goodluck.txt | wc -l -w >Saddik-D_a2_counts.txt
+ 1034  >> Saddik-D_a2_counts.txt
+ 1035  cat Saddik-D_a2_counts.txt
+ 1036  vi Saddik-D_a2_counts.txt
+ 1037  vi 1
+ 1038  vi Saddik-D_a2_counts.txt
+ 1039  history > Saddik-D_A2
+ 1040  mv Saddik-D_a2_counts.txt Saddik-D_A2
+ 1041  cp goodluck.txt Saddik-D_A2

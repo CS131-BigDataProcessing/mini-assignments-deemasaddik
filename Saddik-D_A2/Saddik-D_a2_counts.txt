@@ -1,0 +1,3 @@
+The phrase "Good luck, babe" was detected the following amount of times in the goodluck.txt file:       
+
+Line Count: 6    Word Count:  78
