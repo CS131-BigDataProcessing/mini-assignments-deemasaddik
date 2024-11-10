@@ -1,0 +1,4 @@
+Reasoning:
+It is better to replace the missing values than to remove the rows with missing values as we’d lose nearly 20% of our data which is significant. Especially when the missing data may not be of particular interest.
+The mean, median, and mode should not be used as a condition as it is a measure of central tendency. Rather the interquartile ranges should be found and used to identify outliers. Using the mean would only be appropriate after the outliers are removed so it is a more accurate measure of the center of the data. Otherwise, it is important to use the median rather than the mean when working with the data as a replacement value for outliers. That is why the median was used as the replacement value
+
