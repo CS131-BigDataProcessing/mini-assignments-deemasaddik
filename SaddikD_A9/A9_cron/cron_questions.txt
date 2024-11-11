@@ -1,0 +1,7 @@
+a. What other types of tasks (provide 2) could benefit from automation using cron or at?
+Checking for updates and installing every week
+Preparing unit tests for an upcoming update
+b. What potential risks are there with poorly managed automated tasks, and how can you avoid them (e.g., ensuring backups work correctly)?
+Data storage issues - Use a script to verify if storage is as expected and have it send a notification otherwise
+Deleting critical files or directories - Use absolute paths to specify target directories explicitly and log files that are deleted
+

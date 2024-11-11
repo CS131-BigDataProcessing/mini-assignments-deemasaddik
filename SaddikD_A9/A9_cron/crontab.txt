@@ -1,0 +1,10 @@
+#Set up a Daily File Cleanup Using Cron
+
+0 2 * * * rm /mnt/scratch/FA24_CS131_Jessica/dsaddikfa24/temp/*
+
+#Schedule a Weekly System Backup with Cron
+
+0 3 * * 7 tar -cf archive.tar /mnt/scratch/FA24_CS131_Jessica/dsaddikfa24/backups
+
+# Write command line for sending a Disk Usage Report using Cron
+30 8 * * * df -h | mail -s "Disk Usage Report" deema.saddik@gmail.com

@@ -1,0 +1,16 @@
+  997  cd SaddikD_A4_shell
+  998  cat SaddikD_A4_shell
+  999  ssh dsaddikfa24@172.20.25.9\n
+ 1000  ssh dsaddikfa24@172.20.25.9
+ 1001  git status
+ 1002  git add .
+ 1003  git commit -m "added A5"
+ 1004  git push
+ 1005  git status
+ 1006  vim .gitignore
+ 1007  git status
+ 1008  git add .gitignore
+ 1009  git commit -m "ignoring"
+ 1010  git push
+ 1011  git status
+ 1012  git pull
