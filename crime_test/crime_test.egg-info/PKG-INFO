@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: crime_test
+Version: 3.12.7
+Summary: A package to validate and analyze crime data
+Home-page: https://github.com/deemasaddik/crime_test
+Author: Deema Saddik
+Author-email: deema.saddik@sjsu.edu
+Requires-Dist: pandas
+Requires-Dist: pytest

@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='crime_test',
-    version="3.12.7',
+    version="3.12.7",
     packages=find_packages(),
     install_requires=[
         "pandas",
