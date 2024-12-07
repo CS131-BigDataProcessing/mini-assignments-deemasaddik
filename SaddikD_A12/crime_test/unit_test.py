@@ -58,5 +58,5 @@ def test_calculate_mean_edge_case():
 
 # Run edge case test
 if __name__ == "__main__":
-    test_calculate_mean_edge_case()mean_age = calculate_mean(data['Vict age'])
-median_age = calculate_median(data['Vict age'])
+    test_calculate_mean_edge_case()
+
