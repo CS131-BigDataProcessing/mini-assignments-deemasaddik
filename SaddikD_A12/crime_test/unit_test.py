@@ -42,11 +42,21 @@ if validate_vict_sex(data['Vict sex']):
 if validate_vict_age(data['Vict age']):
     print("'Vict age' column is valid."
 
-mean_age = calculate_mean(data['Vict age'])
+try:
+    mean_age = calculate_mean(data['Vict age'])
+    median_age = calculate_median(data['Vict age'])
+    print(f"Mean age: {mean_age}")
+    print(f"Median age: {median_age}")
+except Exception as e:
+    print(f"Error calculating statistics: {e}")
+
+# Edge case test for mean calculation
+def test_calculate_mean_edge_case():
+    df = pd.DataFrame({'Vict age': ['eight', None]})
+    with pytest.raises(TypeError):
+        calculate_mean(df['Vict age'])
+
+# Run edge case test
+if __name__ == "__main__":
+    test_calculate_mean_edge_case()mean_age = calculate_mean(data['Vict age'])
 median_age = calculate_median(data['Vict age'])
-
-print(f"Mean age: {mean_age}")
-print(f"Median age: {median_age}")
-
-
-
