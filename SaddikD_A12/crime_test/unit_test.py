@@ -2,7 +2,27 @@ import pandas as pd
 import pytest
 from validate_functions import validate_vict_sex, validate_vict_age
 from stats_function import calculate_mean, calculate_median
-data = pd.read_csv("./Crime_Data_from_2020_to_Present.csv")
+
+
+
+import zipfile
+
+# Path to the ZIP file
+zip_file_path = "./Crime_Data_from_2020_to_Present.zip"
+
+# Open the ZIP file and read the CSV
+with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
+    # List files in the ZIP archive
+    file_list = zip_ref.namelist()
+    print("Files in ZIP:", file_list)
+    
+    # Assuming the ZIP contains a single CSV, read it
+    csv_file_name = file_list[0]  # Adjust if multiple files are present
+    with zip_ref.open(csv_file_name) as csv_file:
+        data = pd.read_csv(csv_file)
+#data = pd.read_csv("./Crime_Data_from_2020_to_Present.csv")
+
+
 def test_validate_vict_sex(sex_column):
     if sex_column.isnull().any():
         print("Validation failed: 'Vict sex' contains null values.")
