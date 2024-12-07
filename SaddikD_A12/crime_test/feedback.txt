@@ -1,0 +1,9 @@
+The feedback I provided: 
+
+It looks good Aaminah, the READme file was helpful! 
+The 8 tests ran smoothly, 
+I think she might want us to actually use the dataset instead of our own 
+samples but other than that I don’t think there are any issues
+
+The feedback I recieved:
+
