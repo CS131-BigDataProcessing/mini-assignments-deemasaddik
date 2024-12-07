@@ -40,7 +40,7 @@ if validate_vict_sex(data['Vict sex']):
     print("'Vict sex' column is valid.")
 
 if validate_vict_age(data['Vict age']):
-    print("'Vict age' column is valid."
+    print("'Vict age' column is valid.")
 
 try:
     mean_age = calculate_mean(data['Vict age'])
