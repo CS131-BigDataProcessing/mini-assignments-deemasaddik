@@ -2,6 +2,7 @@ import pandas as pd
 import pytest
 from validate_functions import validate_vict_sex, validate_vict_age
 from stats_function import calculate_mean, calculate_median
+'''
 import zipfile
 
 # Path to the ZIP file
@@ -17,7 +18,8 @@ with zipfile.ZipFile(zip_file_path, 'r') as zip_ref:
     csv_file_name = file_list[0]  # Adjust if multiple files are present
     with zip_ref.open(csv_file_name) as csv_file:
         data = pd.read_csv(csv_file)
-
+'''
+data = pd.read_csv("../Crime_Data_from_2020_to_Present.csv")
 # Validate 'Vict sex' column
 def test_validate_vict_sex(sex_column):
     assert sex_column.isnull().sum() == 0, "Validation failed: 'Vict sex' contains null values."
